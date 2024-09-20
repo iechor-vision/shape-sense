@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShapeCompletion Rust</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body id="custom">
+    <div>
+        <h3>Shape Completion in Rust by Curve Stitching</h3>
+        <p>Blue parts are rasterized stitched curves.</p>
+        <a href="index.html"><button>Index</button></a>
+    </div>
+    <div id="controls">
+        <br>
+        <select id="displaySelector">
+            <option value="None" selected>None</option>
+            <option value="Simplified">Simplified</option>
+            <option value="Smoothed">Smoothed</option>
+        </select>
+        <label for="displaySelector">Display paths</label>
+        <br>
+        <input type="checkbox" id="displayTangents" /> <label for="displayTangents">Display tangents</label>
+        <br>
+        <input type="checkbox" id="displayControlPoints" /> <label for="displayControlPoints">Display control points</label>
+        <br>
+        <br>
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+    <div>
+        <canvas id="original"></canvas>
+    </div>
+    <div id="testDiv">
+        <div id="testInput">
+            <p>Hole</p>
+            <p>
+                <label for="holeXInput">x</label> <input type="text" id="holeXInput" size="3">
+                <label for="holeYInput">y</label> <input type="text" id="holeYInput" size="3">
+                <label for="holeWidthInput">width</label> <input type="text" id="holeWidthInput" size="3">
+                <label for="holeHeightInput">height</label> <input type="text" id="holeHeightInput" size="3">
+            </p>
+            <p>
+                <button id="runTestButton">Run</button>
+            </p>
+        </div>
+        <div>
+            <p>Interactive canvas</p>
+            <p><canvas id="testCanvas"></canvas></p>
+            <p><a id="exportButton"><button>Export</button></a></p>
+        </div>
+    </div>
+</body>
+<script src="./bootstrap.js"></script>
+</html>

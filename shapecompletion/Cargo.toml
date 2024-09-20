@@ -1,0 +1,15 @@
+[package]
+name = "shapecompletion"
+version = "0.1.0"
+authors = ["Chris Tsang <tyt2y7@gmail.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[dependencies]
+bit-vec = "0.6.3"
+flo_curves = "0.5.1"
+hungarian = "1.1.1"
+log = "0.4"
+permutator = "0.4.0"
+visioniechor = "0.7.0"
